@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - My Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">MyWebsite</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger">☰</button>
+      <button id="themeToggle">🌙</button>
+    </nav>
+  </header>
+
+  <main class="content">
+    <h1>Contact Us</h1>
+    <form id="contactForm">
+      <label>Name:</label>
+      <input type="text" id="name" required>
+      
+      <label>Email:</label>
+      <input type="email" id="email" required>
+      
+      <label>Message:</label>
+      <textarea id="message" required></textarea>
+      
+      <button type="submit">Send</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2025 MyWebsite | All rights reserved</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
