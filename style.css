@@ -1,0 +1,30 @@
+/* Global Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, sans-serif; line-height: 1.6; }
+
+/* Navbar */
+.navbar { display: flex; justify-content: space-between; align-items: center; padding: 1rem; background: #333; color: white; }
+.navbar a { color: white; text-decoration: none; margin: 0 10px; }
+.navbar a.active { border-bottom: 2px solid yellow; }
+.hamburger { display: none; background: none; color: white; border: none; font-size: 20px; cursor: pointer; }
+
+/* Hero */
+.hero { text-align: center; padding: 4rem 1rem; background: linear-gradient(to right, #667eea, #764ba2); color: white; }
+.hero button { margin-top: 20px; padding: 10px 20px; cursor: pointer; }
+.animated-box { width: 100px; height: 100px; background: red; margin: 20px auto; transition: transform 1s ease; }
+
+/* Form */
+form { display: flex; flex-direction: column; max-width: 400px; margin: auto; gap: 10px; }
+
+/* Footer */
+footer { text-align: center; padding: 1rem; background: #222; color: #ddd; margin-top: 20px; }
+
+/* Dark theme */
+body.dark { background: #111; color: #eee; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links { display: none; flex-direction: column; background: #333; }
+  .nav-links.active { display: flex; }
+  .hamburger { display: block; }
+}
